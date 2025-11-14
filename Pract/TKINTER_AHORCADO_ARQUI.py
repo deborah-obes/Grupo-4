@@ -28,7 +28,7 @@ ventana.title("Ahorcado Arquitectura")
 ventana.geometry("600x400")
 
 # Cargar imagen de fondo
-imagen_fondo = Image.open("fondo.jpg")
+imagen_fondo = Image.open("fondo_ahorcado.jpg")
 imagen_fondo = imagen_fondo.resize((600, 400))
 fondo = ImageTk.PhotoImage(imagen_fondo)
 
@@ -97,4 +97,5 @@ etiqueta_resultado = tk.Label(ventana, text="", font=("Arial", 16, "bold"), bg="
 etiqueta_resultado.place(relx=0.5, rely=0.85, anchor="center")
 
 # Ejecutar ventana
+
 ventana.mainloop()
