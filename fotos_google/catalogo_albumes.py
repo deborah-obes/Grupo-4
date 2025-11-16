@@ -21,17 +21,17 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 albumes = [
     {
         "nombre": "Parque 2 de Febrero, Resistencia",
-        "imagen": "parque.jpg",
+        "imagen": "parque.png",
         "enlace": "https://photos.google.com/share/AF1QipMdTJhWieCycslhbDi-TGHhUJpMLh5HBJtrV_SKZcx-1md86xVxDhgiH0fhORj4Ig?key=YW1sMVFMNXYxWlRISTYtQWJQdjhUU0t1YjZkVXpR"
     },
     {
         "nombre": "Paseo costanero, corrientes",
-        "imagen": "costanera.jpg",
+        "imagen": "costanera.png",
         "enlace": "https://photos.google.com/share/AF1QipMiC48nkng_zHslWXoj5yHTBLOqdXovGZoqOUmUFe3e-gVcBATEs84Jfj33TmpyiQ?key=NzFLdmNfd2xGSEU1TGdiQzg5UXRqVkFaZDh0VzdR"
     },
     {
         "nombre": "La Unidad, corrientes",
-        "imagen": "unidad.jpg",
+        "imagen": "unidad.png",
         "enlace": "https://photos.google.com/share/AF1QipNatt5t-g5G7tHOwQBSb10A4pHR-Rw6eII8KTFZjULxgBSRDDuDGXPl4CAlKvxOmw?key=Y3NnX1JfMmY4YUw4WGpZS1FKWl9XVzY1bHN4TE1n"
     },
     {
@@ -136,4 +136,5 @@ autor.pack(side="bottom", pady=15)
 
 
 ventana.mainloop()
+
 
