@@ -4,7 +4,7 @@ from PIL import Image, ImageTk
 import webbrowser
 import os
 
-
+# Funciones
 def abrir_album(url):
     webbrowser.open(url)
 
@@ -20,23 +20,23 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # Datos de los álbumes
 albumes = [
     {
-        "nombre": "Parque 2 de Febrero",
+        "nombre": "Parque 2 de Febrero, Resistencia",
         "imagen": "parque.jpg",
         "enlace": "https://photos.google.com/share/AF1QipMdTJhWieCycslhbDi-TGHhUJpMLh5HBJtrV_SKZcx-1md86xVxDhgiH0fhORj4Ig?key=YW1sMVFMNXYxWlRISTYtQWJQdjhUU0t1YjZkVXpR"
     },
     {
-        "nombre": "Plaza de los Abuelos",
-        "imagen": "plaza.jpg",
+        "nombre": "Paseo costanero, corrientes",
+        "imagen": "costanera.jpg",
         "enlace": "https://photos.google.com/share/AF1QipMiC48nkng_zHslWXoj5yHTBLOqdXovGZoqOUmUFe3e-gVcBATEs84Jfj33TmpyiQ?key=NzFLdmNfd2xGSEU1TGdiQzg5UXRqVkFaZDh0VzdR"
     },
     {
-        "nombre": "Plazoleta San Martín",
-        "imagen": "plazoleta.jpg",
+        "nombre": "La Unidad, corrientes",
+        "imagen": "unidad.jpg",
         "enlace": "https://photos.google.com/share/AF1QipNatt5t-g5G7tHOwQBSb10A4pHR-Rw6eII8KTFZjULxgBSRDDuDGXPl4CAlKvxOmw?key=Y3NnX1JfMmY4YUw4WGpZS1FKWl9XVzY1bHN4TE1n"
     },
     {
-        "nombre": "Sendero Laguna Argüello",
-        "imagen": "sendero.jpg",
+        "nombre": "Laguna Argüello, Resistencia",
+        "imagen": "laguna.jpg",
         "enlace": "https://photos.google.com/share/AF1QipND74qYD1MtP8fAbeYc4wA6V8dyKUVpEwIN1DzhU-pDM2VjLD2EK4Aovw-rUlHC3g?key=R1Zmc1BzV0hXV0RPd3ZOVDNMRHZINTREUHdfbFB3"
     }
 ]
@@ -48,14 +48,14 @@ albumes = [
 # -------------------------
 
 ventana = tk.Tk()
-ventana.title("Catálogo de Álbumes - Déborah Obes")
+ventana.title("Catálogo de Álbumes - Grupo 4")
 ventana.configure(bg="#E8EAFE")   # Fondo suave
-ventana.geometry("900x900")
+ventana.geometry("950x900")
 
 # Título principal
 titulo = tk.Label(
     ventana,
-    text="Catálogo de Álbumes Fotográficos",
+    text="Catálogo Turístico",
     font=("Helvetica", 24, "bold"),
     bg="#E8EAFE",
     fg="#1B1B3A"
@@ -84,7 +84,7 @@ for i, album in enumerate(albumes):
         foto.put("gray80", to=(0, 0, 320, 260))
 
     # Marco de cada tarjeta
-    marco = tk.Frame(frame_albumes, bg="#FFFFFF", bd=2, relief="ridge", padx=15, pady=15)
+    marco = tk.Frame(frame_albumes, bg="#FFFFFF", bd=2, relief="groove", padx=15, pady=15)
     marco.grid(row=i//2, column=i%2, padx=25, pady=25)
 
     # Imagen
@@ -127,11 +127,12 @@ for i, album in enumerate(albumes):
 # Pie de página
 autor = tk.Label(
     ventana,
-    text="Realizado por: Déborah Obes",
+    text="Realizado por: Grupo 4 (Deborah Obes, Brenda Torres)",
     font=("Helvetica", 11, "italic"),
     bg="#E8EAFE",
     fg="#333"
 )
 autor.pack(side="bottom", pady=15)
+
 
 ventana.mainloop()
