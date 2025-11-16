@@ -48,8 +48,8 @@ albumes = [
 # -------------------------
 
 ventana = tk.Tk()
-ventana.title("Catálogo de Álbumes - Déborah Obes")
-ventana.configure(bg="#E8EAFE")   # Fondo suave
+ventana.title("Catálogo de Álbumes")
+ventana.configure(bg="#EEE8FE")   # Fondo suave
 ventana.geometry("800x800")
 
 # Título principal
@@ -63,7 +63,7 @@ titulo = tk.Label(
 titulo.pack(pady=20)
 
 # Contenedor principal
-frame_albumes = tk.Frame(ventana, bg="#E8EAFE")
+frame_albumes = tk.Frame(ventana, bg="#ECE8FE")
 frame_albumes.pack(pady=10)
 
 # -------------------------
@@ -76,16 +76,16 @@ for i, album in enumerate(albumes):
 
     try:
         imagen = Image.open(ruta_imagen)
-        imagen = imagen.resize((250, 160))
+        imagen = imagen.resize((300, 120))
         foto = ImageTk.PhotoImage(imagen)
     except Exception as e:
         print("Error cargando imagen:", ruta_imagen, e)
-        foto = tk.PhotoImage(width=250, height=160)
-        foto.put("gray80", to=(0, 0, 250, 160))
+        foto = tk.PhotoImage(width=300, height=120)
+        foto.put("gray60", to=(0, 0, 300, 120))
 
     # Marco de cada tarjeta
-    marco = tk.Frame(frame_albumes, bg="#FFFFFF", bd=2, relief="ridge", padx=15, pady=15)
-    marco.grid(row=i//2, column=i%2, padx=25, pady=25)
+    marco = tk.Frame(frame_albumes, bg="#FFFFFF", bd=2, relief="ridge", padx=10, pady=10)
+    marco.grid(row=i//2, column=i%2, padx=20, pady=20)
 
     # Imagen
     etiqueta_imagen = tk.Label(marco, image=foto, bg="white", cursor="hand2")
