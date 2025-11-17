@@ -32,7 +32,7 @@ albumes = [
     {
         "nombre": "La Unidad, corrientes",
         "imagen": "unidad.png",
-        "https://photos.google.com/share/AF1QipNYx1ENMR_0ZSkVpMDug6Wu0lIBEU5wwWnCbmhPtFDpflTdnP3LXX5SGU6iOqJfng?key=ek9JTTVhUlJKcHlMWDM1aEM2RmdHTndGOWNKZzJB"
+        "enlace": "https://photos.google.com/share/AF1QipNYx1ENMR_0ZSkVpMDug6Wu0lIBEU5wwWnCbmhPtFDpflTdnP3LXX5SGU6iOqJfng?key=ek9JTTVhUlJKcHlMWDM1aEM2RmdHTndGOWNKZzJB"
     },
     {
         "nombre": "Centro de Resistencia",
@@ -139,6 +139,7 @@ autor.pack(side="bottom", pady=15)
 
 
 ventana.mainloop()
+
 
 
 
