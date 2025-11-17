@@ -141,5 +141,3 @@ autor.pack(side="bottom", pady=15)
 ventana.mainloop()
 
 
-
-
